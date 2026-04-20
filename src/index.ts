@@ -102,16 +102,36 @@
 // // console.log(obj.name ? "undefined" : "hello");
 // console.log(obj.name);
 
-type User = {
-    name: string;
-};
+// type User = {
+//     name: string;
+// };
 
-function updateUser(user: User) {
-    user = { name: "New Name" };
-}
+// function updateUser(user: User) {
+//     user = { name: "New Name" };
+// }
 
-const u = { name: "Old Name" };
+// const u = { name: "Old Name" };
 
-updateUser(u);
+// updateUser(u);
 
-console.log(u.name);
+// console.log(u.name);
+
+// type User = {
+//     name: string;
+// };
+
+// const u: User = {
+//     name: "John"
+// };
+
+// let u2 = u;
+
+// u2.name = "Doe";
+
+// u2 = { name: "New" };
+
+// console.log(u.name); //output = doe
+// console.log(u2.name); // output = new
+// // why because in ts and js donig this let u2 = u; deos not clone , it creates a reference of u2 to same object that u has
+// // so any change to u2 will reflect in u
+

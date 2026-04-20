@@ -1,8 +1,10 @@
 "use strict";
 // console.log("A");
-function updateUser(user) {
-    user = { name: "New Name" };
-}
-const u = { name: "Old Name" };
-updateUser(u);
+const u = {
+    name: "John"
+};
+let u2 = u;
+u2.name = "Doe";
+u2 = { name: "New" };
 console.log(u.name);
+console.log(u2.name);
